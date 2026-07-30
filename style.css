@@ -17,7 +17,7 @@
 
 body{
     background:#000;
-    color:#00ff66;
+    color:#000;
     overflow-y:auto;
     overflow-x:hidden;
 }
@@ -150,6 +150,7 @@ body{
     width:100%;
     padding:20px;
     flex-direction:column;
+    
 }
 
 .top-title{
@@ -194,12 +195,12 @@ body{
     object-fit:cover;
     border-radius:2px;
     border:2px solid yellow;
-    box-shadow:0 0 10px #00ff66;
+    box-shadow:0 0 10px pink;
     display:block;
 }
 .grid img:hover{
     transform:scale(1.05);
-    box-shadow:0 0 15px block;
+    box-shadow:0 0 15px yellow;
 }
 
 
