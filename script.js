@@ -4,18 +4,28 @@ function login() {
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value;
 
-    if (username === "Manusha" && password === "July7")
-    {
+    if (username === "Manusha" && password === "July7") {
 
-        alert("❤️Manusha Welcome to Mahesh Website ❤️");
+        alert("❤️ Manusha Welcome to Mahesh Website ❤️");
 
         document.querySelector(".login-box").style.display = "none";
         document.getElementById("gallery").style.display = "flex";
+
+        const music = document.getElementById("music");
+
+        music.play().catch(function(error){
+            console.log("Music play failed:", error);
+        });
+
+    } else {
+
+        alert("❌ Invalid Username or Password");
+
     }
 }
                    
         // Browser allow cheste background music play avuthundi
-        const music = document.getElementById("mmusic.mp3");
+        const music = document.getElementById("music.mp3");
         music.play().catch(() => {});
 
     } else {
