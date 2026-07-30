@@ -23,20 +23,6 @@ function login() {
 
     }
 }
-                   
-        // Browser allow cheste background music play avuthundi
-        const music = document.getElementById("music");
-        music.play().catch(() => {});
-
-    } else {
-
-        alert("❌ Invalid Username or Password");
-}
-const music = document.getElementById("music");
-
-music.play().catch(error => {
-    console.log("Music play failed:", error);
-});
 
 const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
@@ -79,5 +65,3 @@ window.onresize = function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 };
-    
-}
