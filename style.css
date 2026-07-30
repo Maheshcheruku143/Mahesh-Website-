@@ -189,14 +189,15 @@ body{
 .grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:10px;
+    gap:12px;
 }
 
 .grid img{
     width:100%;
     aspect-ratio:3/4;
     object-fit:cover;
-    border-radius:20px;
+    border-radius:2px;
+    box-shadow:0 0 10px #00ff66;
     display:block;
 
 .grid img:hover{
@@ -204,14 +205,24 @@ body{
     box-shadow:0 0 15px #block;
 }
 
-.videos video{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    margin-bottom:15px;
-    margin-bottom:15px;
-    border:2px solid #pink;
-    border-radius:8px;
-   
+.videos{
+    flex:1;
+    padding:15px;
+    overflow-y:auto;
+    height:85vh;
 }
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+}
+
+.video-grid video{
+    width:100%;
+    aspect-ratio:9/16;
+    object-fit:cover;
+    border-radius:12px;
+    border:2px solid #00ff66;
+    box-shadow:0 0 10px #00ff66;
 }
