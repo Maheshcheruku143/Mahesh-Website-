@@ -164,14 +164,16 @@ body{
 }
 
 .container{
-    display:block;
+    display:flex;
+   flex-direction:column;
     weight:100%;
     gap:12px;
-    height:100%;
 }
 
 .images,
 .videos{
+    width:100%;
+    margin-bottom:30px;
     flex:1;
     background:15px;
     overflow-y:auto;
