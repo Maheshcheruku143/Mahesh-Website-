@@ -272,40 +272,34 @@ body{
 }
 
 .welcome-box .title{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-    flex-wrap:wrap;
-    line-height:1.2;
     margin:0;
+    text-align:center;
+    line-height:1.3;
+}
+
+.welcome-box .gold,
+.welcome-box .white,
+.welcome-box .blue{
+    display:block;
+    width:100%;
 }
 
 .welcome-box .gold{
+    font-size:32px;
     color:#ffd700;
-    font-size:42px;
-    font-weight:bold;
-    text-shadow:
-        0 0 10px gold,
-        0 0 20px gold;
+    text-shadow:0 0 15px gold;
 }
 
 .welcome-box .white{
-    color:#ffffff;
     font-size:42px;
-    font-weight:bold;
-    text-shadow:
-        0 0 10px white,
-        0 0 20px white;
+    color:#fff;
+    text-shadow:0 0 15px #fff;
 }
 
 .welcome-box .blue{
+    font-size:32px;
     color:#00d9ff;
-    font-size:42px;
-    font-weight:bold;
-    text-shadow:
-        0 0 10px cyan,
-        0 0 20px cyan;
+    text-shadow:0 0 15px cyan;
 }
 
 /* Footer */
@@ -324,33 +318,26 @@ body{
     box-shadow:0 0 20px #00ff66;
 }
 
-
-
 /* ===== MOBILE ===== */
-
 @media (max-width:768px){
 
     .welcome-box{
-        min-height:170px;
-        padding:15px;
-    }
-
-    .welcome-box .title{
-        flex-direction:column;
-        gap:8px;
+        height:auto;
+        padding:20px 10px;
     }
 
     .welcome-box .gold{
-        font-size:28px;
+        font-size:24px;
     }
 
     .welcome-box .white{
-        font-size:34px;
+        font-size:32px;
     }
 
     .welcome-box .blue{
-        font-size:28px;
+        font-size:24px;
     }
+}
 
     .grid,
     .video-grid{
