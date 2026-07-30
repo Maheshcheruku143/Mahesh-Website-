@@ -40,8 +40,8 @@ body{
     overflow:hidden;
     border-right:3px solid #00ff66;
     width:16ch;
-    animation:typing 8s steps(16) infinite,
-               blink .10s infinite;
+    animation:typing 11s steps(26) infinite,
+               blink .11s infinite;
 }
 
 @keyframes glow{
@@ -196,7 +196,7 @@ body{
     border-radius:2px;
     border:2px solid yellow;
     box-shadow:0 0 10px pink;
-    display:block;
+    display:green;
 }
 .grid img:hover{
     transform:scale(1.05);
@@ -218,7 +218,7 @@ body{
     border-radius:8px;
     border:2px solid yellow;
     box-shadow:0 0 10px #00ff66;
-    display:block;
+    display:green;
 }
 
 .grid img:hover,
