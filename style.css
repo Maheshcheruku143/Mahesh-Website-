@@ -177,10 +177,27 @@ body{
     flex:1;
 }
 
-.images h2,
+.images h2{
+    text-align:center;
+    margin-bottom:15px;
+    color:red;
+    font-size:42px;
+    font-weight:bold;
+    text-shadow:
+        0 0 10px red,
+        0 0 20px darkred,
+        0 0 30px red;
+}
+
 .videos h2{
     text-align:center;
     margin-bottom:15px;
+    color:#00ff66;
+    font-size:42px;
+    font-weight:bold;
+    text-shadow:
+        0 0 10px #00ff66,
+        0 0 20px #00ff66;
 }
 
 .grid{
