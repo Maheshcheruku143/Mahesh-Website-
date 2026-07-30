@@ -126,6 +126,27 @@ body{
     color:green;
 }
 
+.password-box{
+    position:relative;
+    width:100%;
+    margin:12px 0;
+}
+
+.password-box input{
+    width:100%;
+    height:45px;
+    padding:10px 45px 10px 10px;
+}
+
+.eye{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:20px;
+    color:black;
+}
 .login-box button{
     width:100%;
     height:42px;
