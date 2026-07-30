@@ -9,8 +9,8 @@ function login() {
         alert("❤️Manusha Welcome to Mahesh Website ❤️");
 
         document.querySelector(".login-box").style.display = "none";
-        document.getElementById("gallery").style.display = "block";
-
+        document.getElementById("gallery").style.display = "flex";
+    }
        const music = document.getElementById("music");
 
         music.volume = 1.0;
