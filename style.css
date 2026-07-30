@@ -195,7 +195,7 @@ body{
     border-radius:2px;
     border:2px solid yellow;
     box-shadow:0 0 10px pink;
-    display:green;
+    display:block;
 }
 .grid img:hover{
     transform:scale(1.05);
@@ -217,7 +217,7 @@ body{
     border-radius:8px;
     border:2px solid yellow;
     box-shadow:0 0 10px #00ff66;
-    display:green;
+    display:block;
 }
 
 .grid img:hover,
