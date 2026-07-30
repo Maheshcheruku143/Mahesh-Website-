@@ -78,8 +78,8 @@ body{
 /* Login Box */
 
 .login-box{
-    width:500px;
-    max-width:90%;
+    width:300px;
+    max-width:70%;
     padding:40px;
     background:rgba(0,0,0,0.85);
     border:2px solid #00ff66;
