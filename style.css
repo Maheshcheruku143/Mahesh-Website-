@@ -32,6 +32,7 @@ body{
 }
 
 .typing{
+    display:none;
     color:#00ff66;
     text-align:center;
     margin-top:10px;
