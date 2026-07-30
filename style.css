@@ -40,7 +40,7 @@ body{
     overflow:hidden;
     border-right:3px solid #00ff66;
     width:16ch;
-    animation:typing 3s steps(16) infinite,
+    animation:typing 8s steps(16) infinite,
                blink .8s infinite;
 }
 
