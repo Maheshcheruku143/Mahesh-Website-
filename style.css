@@ -1,4 +1,4 @@
-#matrix{
+Zee#matrix{
     position:fixed;
     top:0;
     left:0;
@@ -208,11 +208,12 @@ body{
     gap:12px;
 }
 
+
 .video-grid video{
     width:100%;
-    aspect-ratio:3/4;
+    height:150px;
     object-fit:cover;
-    border-radius:3px;
+    border-radius:8px;
     border:2px solid #00ff66;
     box-shadow:0 0 10px #00ff66;
     display:block;
