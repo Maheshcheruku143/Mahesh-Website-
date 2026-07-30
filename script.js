@@ -25,7 +25,7 @@ function login() {
 }
                    
         // Browser allow cheste background music play avuthundi
-        const music = document.getElementById("music.mp3");
+        const music = document.getElementById("music");
         music.play().catch(() => {});
 
     } else {
