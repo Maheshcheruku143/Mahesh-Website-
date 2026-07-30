@@ -76,11 +76,11 @@ body{
 
 /* Login Box */
 .login-box{
-    width:420px;
+    width:720px;
     max-width:90%;
     position:absolute;
-    top:50%;
-    left:50%;
+    top:200%;
+    left:200%;
     transform:translate(-50%,-50%);
     background:rgba(0,0,0,.8);
     border:2px solid #00ff66;
