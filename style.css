@@ -297,6 +297,10 @@ body{
                 0 0 20px cyan;
 }
 
+.images-title{
+    color:red;
+}
+
 .welcome-box .emoji{
     display:block;
     font-size:30px;
