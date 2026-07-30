@@ -29,6 +29,16 @@ function login() {
     }
 }
 
+function togglePassword() {
+    let password = document.getElementById("password");
+
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+}
+
 const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
 
