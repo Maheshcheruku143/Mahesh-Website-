@@ -249,19 +249,17 @@ body{
     transform:scale(1.05);
     max-height:20vh;
 }
-/* Header Box */
+/* ===== HEADER BOX ===== */
 
 .welcome-box{
     width:95%;
-    max-width:700px;
-
-    height:200px;      /* Height takkuva */
+    max-width:900px;
+    min-height:180px;
     margin:20px auto;
     padding:20px;
-
     background:#111;
     border:4px solid yellow;
-    border-radius:20px;
+    border-radius:25px;
 
     display:flex;
     justify-content:center;
@@ -274,41 +272,40 @@ body{
 }
 
 .welcome-box .title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    line-height:1.2;
     margin:0;
-    line-height:1.1;
 }
 
 .welcome-box .gold{
-    display:block;
-    font-size:30px;
     color:#ffd700;
-    text-shadow:3px 3px 0 #b8860b,
-                0 0 20px gold;
+    font-size:42px;
+    font-weight:bold;
+    text-shadow:
+        0 0 10px gold,
+        0 0 20px gold;
 }
 
 .welcome-box .white{
-    display:block;
-    font-size:30px;
-    color:#fff;
-    text-shadow:0 0 15px #fff;
+    color:#ffffff;
+    font-size:42px;
+    font-weight:bold;
+    text-shadow:
+        0 0 10px white,
+        0 0 20px white;
 }
 
 .welcome-box .blue{
-    display:block;
-    font-size:30px;
     color:#00d9ff;
-    text-shadow:3px 3px 0 #0066aa,
-                0 0 20px cyan;
-}
-
-.images-title{
-    color:yellow;
-}
-
-.welcome-box .emoji{
-    display:block;
-    font-size:30px;
-    margin-top:10px;
+    font-size:42px;
+    font-weight:bold;
+    text-shadow:
+        0 0 10px cyan,
+        0 0 20px cyan;
 }
 
 /* Footer */
@@ -327,27 +324,39 @@ body{
     box-shadow:0 0 20px #00ff66;
 }
 
-/* Mobile */
 
-@media(max-width:768px){
 
-    .title{
-        font-size:30px;
+/* ===== MOBILE ===== */
+
+@media (max-width:768px){
+
+    .welcome-box{
+        min-height:170px;
+        padding:15px;
     }
 
-    .white{
-        font-size:24px;
+    .welcome-box .title{
+        flex-direction:column;
+        gap:8px;
     }
 
-    .blue{
+    .welcome-box .gold{
+        font-size:28px;
+    }
+
+    .welcome-box .white{
         font-size:34px;
+    }
+
+    .welcome-box .blue{
+        font-size:28px;
     }
 
     .grid,
     .video-grid{
         grid-template-columns:repeat(3,1fr);
+        gap:8px;
     }
-
 }
 
 
