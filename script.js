@@ -66,3 +66,21 @@ window.onresize = function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 };
+const music = document.getElementById("music");
+const videos = document.querySelectorAll("video");
+
+videos.forEach(video => {
+
+    video.addEventListener("play", function () {
+        music.pause();
+    });
+
+    video.addEventListener("pause", function () {
+        music.play().catch(() => {});
+    });
+
+    video.addEventListener("ended", function () {
+        music.play().catch(() => {});
+    });
+
+});
