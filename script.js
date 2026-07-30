@@ -1,18 +1,5 @@
 
 function login() {
-    alert("Button Working");
-
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    if (username === "Manusha" && password === "July7") {
-        alert("Login Success");
-    } else {
-        alert("Wrong Username or Password");
-    }
-}
-
-function login() {
 
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value;
@@ -25,18 +12,7 @@ function login() {
         document.querySelector(".login-box").style.display = "none";
         document.getElementById("gallery").style.display = "flex";
     }
-       const music = document.getElementById("music");
-
-        music.volume = 1.0;
-
-        music.play()
-            .then(() => {
-                console.log("Music started");
-            })
-            .catch((err) => {
-                console.log("Music error:", err);
-            });
-        
+}
                    
         // Browser allow cheste background music play avuthundi
         const music = document.getElementById("mmusic.mp3");
