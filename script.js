@@ -12,6 +12,10 @@ function login() {
         document.querySelector(".login-box").style.display = "none";
         document.getElementById("gallery").style.display = "flex";
 
+
+        document.getElementById("matrix").style.display = "none";
+        document.getElementById("matrix").style.display = "block";
+
         const music = document.getElementById("music");
 
         music.play().catch(function(error){
