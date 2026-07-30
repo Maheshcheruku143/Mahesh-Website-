@@ -192,12 +192,10 @@ body{
 
 .grid img{
     width:100%;
-    height:180px;
+    aspect-ratio:3/4;
     object-fit:cover;
-    border:2px solid #yellow;
-    border-radius:8px;
-    transition:.3s;
-}
+    border-radius:10px;
+    display:block;
 
 .grid img:hover{
     transform:scale(1.05);
@@ -210,4 +208,5 @@ body{
     margin-bottom:15px;
     border:2px solid #pink;
     border-radius:8px;
+}
 }
