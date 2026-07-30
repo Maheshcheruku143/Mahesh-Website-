@@ -253,9 +253,9 @@ body{
 
 .welcome-box{
     width:95%;
-    max-width:900px;
+    max-width:700px;
 
-    height:150px;      /* Height takkuva */
+    height:200px;      /* Height takkuva */
     margin:20px auto;
     padding:20px;
 
