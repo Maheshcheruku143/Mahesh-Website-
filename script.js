@@ -1,3 +1,17 @@
+
+function login() {
+    alert("Button Working");
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username === "Manusha" && password === "July7") {
+        alert("Login Success");
+    } else {
+        alert("Wrong Username or Password");
+    }
+}
+
 function login() {
 
     const username = document.getElementById("username").value.trim();
