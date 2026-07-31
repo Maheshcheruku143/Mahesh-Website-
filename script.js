@@ -1,7 +1,6 @@
-
-function login() {
-    alert("Button Clicked");
-
+   function login() {
+    alert("Login Function Working");
+    
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value;
 
