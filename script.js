@@ -1,5 +1,5 @@
 
-/*function login() {
+function login() {
     alert("Button Clicked");
 
     const username = document.getElementById("username").value.trim();
@@ -7,7 +7,7 @@
 
     if (username === "Mahesh" && password === "July7") {
 
-        alert("❤️  Welcome to Mahesh Website ❤️");*/
+        alert("❤️  Welcome to Mahesh Website ❤️");
 
        /* document.querySelector(".login-box").style.display = "none";*/
         document.getElementById("gallery").style.display = "flex";
