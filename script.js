@@ -9,7 +9,7 @@ function login() {
 
         alert("❤️  Welcome to Mahesh Website ❤️");
 
-       /* document.querySelector(".login-box").style.display = "none";*/
+       document.querySelector(".login-box").style.display = "none";
         document.getElementById("gallery").style.display = "flex";
 
         document.getElementById("matrix").style.display = "block";
