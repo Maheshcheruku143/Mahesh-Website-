@@ -128,8 +128,20 @@ videos.forEach(video => {
 
     });
 
-});
+video.addEventListener("pause", function () {
 
+        bgMusic.play().catch(() => {});
+
+    });
+
+
+    video.addEventListener("ended", function () {
+
+        bgMusic.play().catch(() => {});
+
+    });
+
+});
 // Image click
 document.querySelectorAll(".grid img").forEach(img => {
 
