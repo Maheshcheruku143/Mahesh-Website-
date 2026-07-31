@@ -1,5 +1,5 @@
 
-function login() {
+*function login() {
     alert("Button Clicked");
 
     const username = document.getElementById("username").value.trim();
