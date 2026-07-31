@@ -14,7 +14,7 @@
 
 
 
-        document.getElementById("matrix").style.display = "flex";
+        document.getElementById("matrix").style.display = "block";
 
         const bgMusic = document.getElementById("music");
 
