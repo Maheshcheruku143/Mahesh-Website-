@@ -10,9 +10,11 @@
         alert("❤️  Welcome to Mahesh Website ❤️");
 
        document.querySelector(".login-box").style.display = "none";
-        document.getElementById("gallery").style.display = "flex";
+        document.getElementById("gallery").style.display = "block";
 
-        document.getElementById("matrix").style.display = "block";
+
+
+        document.getElementById("matrix").style.display = "flex";
 
         const bgMusic = document.getElementById("music");
 
