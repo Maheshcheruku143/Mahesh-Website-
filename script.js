@@ -12,8 +12,6 @@ function login() {
         document.querySelector(".login-box").style.display = "none";
         document.getElementById("gallery").style.display = "flex";
 
-
-        document.getElementById("matrix").style.display = "none";
         document.getElementById("matrix").style.display = "block";
 
         const bgMusic = document.getElementById("music");
@@ -126,9 +124,14 @@ videos.forEach(video => {
 
 // Image click
 document.querySelectorAll(".grid img").forEach(img => {
-    ...
-});
 
+    img.addEventListener("click", function(){
+
+        imageMusic.play().catch(()=>{});
+
+    });
+
+});
 // Scroll chesinappudu background music
 window.addEventListener("scroll", function () {
 
