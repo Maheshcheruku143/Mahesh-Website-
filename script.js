@@ -95,6 +95,22 @@ window.onresize = function () {
 const bgMusic = document.getElementById("music");
 const imageMusic = document.getElementById("imageMusic");
 
+document.querySelectorAll(".grid img").forEach(img => {
+
+    img.addEventListener("click", function(){
+
+        // Background song stop
+        bgMusic.pause();
+        bgMusic.currentTime = 0;
+
+        // Image song start
+        imageMusic.pause();
+        imageMusic.currentTime = 0;
+        imageMusic.play().catch(()=>{});
+
+    });
+
+});
 // Gallery videos maatrame select cheyyi
 const videos = document.querySelectorAll(".video-grid video");
 
