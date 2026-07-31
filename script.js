@@ -108,14 +108,39 @@ videos.forEach(video => {
     });
 
 });
+
 const bgMusic = document.getElementById("music");
 const imageMusic = document.getElementById("imageMusic");
 
+// Image click
 document.querySelectorAll(".grid img").forEach(img => {
+
     img.addEventListener("click", function () {
+
         bgMusic.pause();
         bgMusic.currentTime = 0;
 
-        imageMusic.play();
+        imageMusic.currentTime = 0;
+        imageMusic.play().catch(function(err){
+            console.log(err);
+        });
+
     });
+
+});
+
+// Scroll chesinappudu background music
+window.addEventListener("scroll", function () {
+
+    if (!imageMusic.paused) {
+        imageMusic.pause();
+        imageMusic.currentTime = 0;
+    }
+
+    if (bgMusic.paused) {
+        bgMusic.play().catch(function(err){
+            console.log(err);
+        });
+    }
+
 });
