@@ -39,6 +39,16 @@ function togglePassword() {
     }
 }
 
+// Right Click Disable
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+});
+
+// Drag Disable
+document.addEventListener("dragstart", function(e){
+    e.preventDefault();
+});
+
 const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
 
