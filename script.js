@@ -108,3 +108,14 @@ videos.forEach(video => {
     });
 
 });
+const bgMusic = document.getElementById("music");
+const imageMusic = document.getElementById("imageMusic");
+
+document.querySelectorAll(".grid img").forEach(img => {
+    img.addEventListener("click", function () {
+        bgMusic.pause();
+        bgMusic.currentTime = 0;
+
+        imageMusic.play();
+    });
+});
