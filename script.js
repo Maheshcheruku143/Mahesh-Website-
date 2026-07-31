@@ -99,15 +99,25 @@ const imageMusic = document.getElementById("imageMusic");
 const videos = document.querySelectorAll(".video-grid video");
 
 // Video play ayithe rendu songs stop
+
 videos.forEach(video => {
 
     video.addEventListener("play", function () {
 
         bgMusic.pause();
+        bgMusic.currentTime = 0;
+
         imageMusic.pause();
+        imageMusic.currentTime = 0;
 
     });
 
+});
+
+
+    
+
+    
     video.addEventListener("pause", function () {
 
         bgMusic.play().catch(() => {});
@@ -127,11 +137,18 @@ document.querySelectorAll(".grid img").forEach(img => {
 
     img.addEventListener("click", function(){
 
+        bgMusic.pause();
+        bgMusic.currentTime = 0;
+
         imageMusic.play().catch(()=>{});
 
     });
 
 });
+
+
+
+
 // Scroll chesinappudu background music
 window.addEventListener("scroll", function () {
 
