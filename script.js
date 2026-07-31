@@ -16,11 +16,14 @@ function login() {
         document.getElementById("matrix").style.display = "none";
         document.getElementById("matrix").style.display = "block";
 
-        const music = document.getElementById("music");
+        const bgMusic = document.getElementById("music");
 
-        music.play().catch(function(error){
-            console.log("Music play failed:", error);
-        });
+bgMusic.currentTime = 0;
+
+bgMusic.play().catch(function(error){
+    console.log(error);
+});
+ 
 
     } else {
 
@@ -90,43 +93,40 @@ window.onresize = function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 };
-const music = document.getElementById("music");
-const videos = document.querySelectorAll("video");
-
-videos.forEach(video => {
-
-    video.addEventListener("play", function () {
-        music.pause();
-    });
-
-    video.addEventListener("pause", function () {
-        music.play().catch(() => {});
-    });
-
-    video.addEventListener("ended", function () {
-        music.play().catch(() => {});
-    });
-
-});
 
 const bgMusic = document.getElementById("music");
 const imageMusic = document.getElementById("imageMusic");
 
-// Image click
-document.querySelectorAll(".grid img").forEach(img => {
+// Gallery videos maatrame select cheyyi
+const videos = document.querySelectorAll(".video-grid video");
 
-    img.addEventListener("click", function () {
+// Video play ayithe rendu songs stop
+videos.forEach(video => {
+
+    video.addEventListener("play", function () {
 
         bgMusic.pause();
-        bgMusic.currentTime = 0;
-
-        imageMusic.currentTime = 0;
-        imageMusic.play().catch(function(err){
-            console.log(err);
-        });
+        imageMusic.pause();
 
     });
 
+    video.addEventListener("pause", function () {
+
+        bgMusic.play().catch(() => {});
+
+    });
+
+    video.addEventListener("ended", function () {
+
+        bgMusic.play().catch(() => {});
+
+    });
+
+});
+
+// Image click
+document.querySelectorAll(".grid img").forEach(img => {
+    ...
 });
 
 // Scroll chesinappudu background music
