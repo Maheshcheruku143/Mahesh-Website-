@@ -4,7 +4,7 @@
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value;
 
-    if (username === "Mahesh" && password === "July7") {
+    if (username === "Mahesh" && password === "Aug15") {
 
         alert("❤️  Welcome to Mahesh Website ❤️");
 
