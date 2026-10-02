@@ -174,4 +174,19 @@ window.addEventListener("scroll", function () {
         });
     }
 
+<script>
+function toggleMenu(button) {
+
+    const menu = button.nextElementSibling;
+
+    document.querySelectorAll(".download-menu").forEach(function(item) {
+        if (item !== menu) {
+            item.classList.remove("show");
+        }
+    });
+
+    menu.classList.toggle("show");
+}
+
 });
+</script>
